@@ -1,0 +1,495 @@
+.cabin-unique {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: wdth 100;
+}
+
+:root {
+    --text-color: #333;
+    --background-color: #dddddd;
+    --link-color: #c8bb9a;
+    --hover-color: #fff;
+    --font-title: 'Poppins', sans-serif; /* or any other font family you want to use */
+    --font-capt: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-capt);
+    background-color: var(--background-color);
+    color: #333;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+    height: 80px;
+    margin-top: 20px;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+
+}
+.left a{
+    font-family: var(--font-title);
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.left p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: var(--font-capt);
+}
+.left i{
+    align-items: baseline;
+    font-size: 25px;
+    color: #0c0ccb;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    padding: 30px;
+}
+.right a{
+    font-family: var(--font-capt);
+    font-size: 14px;
+    margin: 7px;
+}
+.right a:hover{
+    color: var(--link-color);
+    transition: 0.3s;
+}
+.left a:hover{
+    color:var(--link-color) ;
+    transition: 0.3s;
+}
+
+/* SELF HERO */
+.selfHero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px;
+    margin-top: 120px;
+}
+.headshots{
+    flex: 0.2;
+    display: flex;
+    justify-content: center;
+}
+.headshots img {
+    border-radius: 50%;  /* Makes the image round */
+    object-fit: cover;   /* Makes sure the image fits inside the circle */
+    width: 400px;        /* Set a fixed width */
+    height: 400px;       /* Set a fixed height */
+}
+.text {
+    max-width: 600px;
+    text-align: left;
+}
+.text h2 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #000000;
+    font-family: var(--font-capt);
+}
+
+.text h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 5px;
+    font-family: var(--font-capt);
+}
+
+.text p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.3;
+    margin-top: 20px;
+    font-family: var(--font-capt);
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: left; /* Centers the buttons horizontally */
+    gap: 20px; /* Adds space between buttons */
+    margin-top: 30px;
+}
+/* Button Styling */
+
+#cb1:hover {
+    background-color: #d9d8d8; /* Darker gray for hover effect */
+}
+
+#cb2:hover {
+    background-color: #d9d8d8;
+}
+
+#cb3:hover {
+    background-color: #d9d8d8;
+}
+
+#cb1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* Size of the circle */
+    height: 120px; /* Size of the circle */
+    background-color: #4d76c9; /* Orange background for "Resume" button */
+    color: rgb(0, 0, 0);
+    border-radius: 50%; /* Makes it circular */
+    text-decoration: none; /* Removes underline from the anchor tag */
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Adds hover effect */
+    outline: 2px solid; /* Initial outline with no visible color */
+}
+#cb2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* Size of the circle */
+    height: 120px; /* Size of the circle */
+    background-color: #e22f56; /* Orange background for "Resume" button */
+    color: rgb(0, 0, 0);
+    border-radius: 50%; /* Makes it circular */
+    text-decoration: none; /* Removes underline from the anchor tag */
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Adds hover effect */
+    outline: 2px solid; /* Initial outline with no visible color */
+}
+#cb3{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* Size of the circle */
+    height: 120px; /* Size of the circle */
+    background-color: #FFA500; /* Orange background for "Resume" button */
+    color: rgb(0, 0, 0);
+    border-radius: 50%; /* Makes it circular */
+    text-decoration: none; /* Removes underline from the anchor tag */
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Adds hover effect */
+    outline: 2px solid; /* Initial outline with no visible color */
+}
+/* Horizontal Line */
+.Horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #000000; /* Light grey color for the line */
+    margin-bottom: 20px;
+}
+
+/* Footer Container */
+footer {
+    padding: 80px 20px;
+}
+
+/* Flex container for footer sections */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 80px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Makes sure items wrap on smaller screens */
+}
+
+/* Contact Section */
+.contact, .email, .sosmed, .copyright {
+    flex: 1;
+    margin: 10px;
+}
+
+footer h1 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Social Media Links */
+.sosmed a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #333; /* Default color for icons */
+    text-decoration: none;
+}
+
+.sosmed a:hover {
+    color: #0073e6; /* Blue color for hover effect */
+}
+
+/* Copyright Section */
+.copyright p {
+    font-size: 14px;
+    color: #888; /* Lighter gray for the copyright text */
+    text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact, .email, .sosmed, .copyright {
+        margin-bottom: 20px;
+    }
+
+    .sosmed a {
+        margin: 0 10px;
+    }
+}
+
+/* Resume Section */
+.resume {
+    margin-top: 200px;
+    padding: 0 80px;
+    margin-left: 100px;
+}
+
+/* Resume Title */
+.resume h2 {
+    padding-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+/* Table Layout */
+.experience-container {
+    width: 100%;
+    border-collapse: separate; /* Ensures spacing between cells */
+    border-spacing: 25px; /* Increase spacing between table cells */
+    margin-top: 20px;
+}
+
+/* Table Cell Styling */
+td {
+    padding: 25px 50px; /* Increase padding for more space */
+    border: 1px solid #ddd; /* Adds a border around the cells */
+    vertical-align: top; /* Align text to the top */
+    text-align: left; /* Align text to the left */
+}
+
+/* Vertical line between cells */
+td:not(:last-child) {
+    border-right: 3px solid #ddd; /* Adds a vertical line between cells */
+}
+
+/* Special Cells (Work Experience, Education, etc.) */
+.special-cell {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #333;
+}
+
+/* Time Cells */
+.time-cell {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Description Cells */
+.desc-cell {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Horizontal Line Below Table */
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience-container {
+        border-spacing: 15px; /* Slightly less spacing on smaller screens */
+    }
+
+    td {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+}
+
+
+/* Projects Section */
+.projects-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* Table for Projects */
+.project-container {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders between cells */
+    margin-top: 20px;
+    border-spacing: 25px; /* Increase spacing between table cells */
+}
+
+.project1, .project2, .project3{
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.text-section h1{
+    margin-bottom: 20px;
+}
+.image-section{
+    margin-left: 80px;
+}
+.image-section img{
+    margin-left: 50px;
+    width: 300px;
+    height: 150px;
+}
+
+/* CONTACT SECTION */
+
+.contact-section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+}
+.contact-text{
+    padding-right: 80px;
+}
+.title{
+    margin: 20px;
+}
+.title h2{
+    font-family: var(--font-capt);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.title p{
+    font-family: var(--font-capt);
+    font-size: 16px;
+}
+.phone{
+    margin: 20px;
+}
+.phone h1{
+    font-family: var(--font-capt);
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+.phone p{
+    font-family: var(--font-capt);
+    font-size: 16px;
+}
+.email{
+    margin: 20px;
+}
+.margin h1{
+    font-family: var(--font-capt);
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+.margin p{
+    font-family: var(--font-capt);
+    font-size: 16px
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-contact{
+    display: flex;
+    justify-content: center;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px; /* Space between label and input */
+}
+.form-group input, .form-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%; /* Ensure the input spans the full width */
+    outline: 1px #B6B09F solid;
+}
+.submit-btn {
+    padding: 15px;
+    background-color: #4d16da;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+    background-color: #9f92b3; /* Darker orange on hover */
+}
